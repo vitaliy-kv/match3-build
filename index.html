@@ -88,6 +88,10 @@
             return;
           }
 
+          setTimeout(() => {
+            window.deliverJwtToUnity("eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIrMTAwMDAwMDAwMDAiLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6NDEwMjQ0NDgwMH0.YK4GbCLplW7_Psbx8kSbx8TimSounp6aNwwbGXd0RStMx6Oen6SvpaW0aELXwA3B6fjnJOBYeF71Egrc8Poh1IyKgU8XnyoI_zEpSBgArQDYWcguU3iuzfoViF-AyavqpZ-zAr_iPWX_NCKWgPsfjHCwJgm8pdNpUrlwad2Zcv-nxeB32YoXtlMSH4qCMccypfYow0EZEigu30w5ZBzlSOMa04fsWOIOb4AnhxtrAG6105J_lQD9FBP0Wl9MaXsq0hwkdq7Nh7H3owZ0mZpiNb_dEKXNBOjyCvDTlKmKwjaiQWQouP_WhYbs_moWQlqOSj3n178K6BNioTWVv0Mx2A");
+          }, 500);
+
           console.warn("requestJwt: no native bridge");
         }
       };
