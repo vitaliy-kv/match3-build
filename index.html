@@ -136,7 +136,7 @@
         companyName: "KLO",
         productName: "klo_match3",
         productVersion: "1.0.0",
-        devicePixelRatio: 1
+        devicePixelRatio: Math.min(window.devicePixelRatio, 2)
       }).then((instance) => {
 
         unityInstance = instance;
