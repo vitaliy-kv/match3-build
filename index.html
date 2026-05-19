@@ -5,9 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>KLO Match3</title>
 
-    <link rel="preload" href="Build/build.wasm.br" as="fetch" type="application/wasm" crossorigin>
-    <link rel="preload" href="Build/build.data.br" as="fetch" crossorigin>
-    <link rel="preload" href="Build/build.framework.js.br" as="script">
+    <link rel="preload" href="Build/*.wasm.br" as="fetch" type="application/wasm" crossorigin>
+    <link rel="preload" href="Build/*.data.br" as="fetch" crossorigin>
+    <link rel="preload" href="Build/*.framework.js.br" as="script">
 
     <style>
       html, body {
@@ -34,7 +34,7 @@
   <body>
     <canvas id="unity-canvas" tabindex="-1"></canvas>
 
-    <script src="Build/build.loader.js"></script>
+    <script src="Build/*.loader.js"></script>
 
     <script>
       let unityInstance = null;
@@ -129,9 +129,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/build.data.br",
-        frameworkUrl: "Build/build.framework.js.br",
-        codeUrl: "Build/build.wasm.br",
+        dataUrl: "Build/*.data.br",
+        frameworkUrl: "Build/*.framework.js.br",
+        codeUrl: "Build/*.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "KLO",
         productName: "klo_match3",
